@@ -1,62 +1,44 @@
+
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-GOV.UK Prototype Kit
+  GOV.UK Prototype Kit
 {% endblock %}
 
 {% block content %}
 
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        The GOV.UK Prototype Kit
+        <span class="govuk-caption-xl">{{releaseVersion}}</span>
+      </h1>{{releaseVersion | log }}
+      <p>
+        This kit lets you rapidly create HTML prototypes of GOV.UK services.
+      </p>
 
+      <p>
+        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
+      </p>
 
-<div class="govuk-grid-row">
+      <h2 class="govuk-heading-m">About this page</h2>
 
-  <div class="govuk-grid-column-two-thirds">
-    <h1 class="govuk-heading-xl">
-      Drone registration
-      <!-- <span class="govuk-caption-xl">{{releaseVersion}}</span> -->
-    </h1>{{releaseVersion | log }}
+      <p>We recommend you add links to your prototype to this page, rather than delete it.
+        You'll find this page in the kit at '/app/views/index.html'.</p>
 
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing.
-    </p>
+      <p>You can change the service name by editing the file '/app/config.js'.</p>
 
-    <div class="govuk-inset-text">
-      It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.
-    </div>
+      <h2 class="govuk-heading-m">Examples and documentation</h2>
 
-    <p>
-      This page is also available in <a target="blank" href="#">Welsh (Cymraeg).</a>
-    </p>
-
-    <a href="#" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
-      Start now
-      <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
-        <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
-      </svg>
-    </a>
-
-  </div>
-
-  <div class="govuk-grid-column-one-third">
-    <div class="govuk-grid-column-one-third-wrapper">
-      <h4 class="govuk-heading-s">Related content</h4>
-
-      <ul class="govuk-list" style="font-size: 16px;">
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="/docs/tutorials-and-examples">Example pages and documentation</a></li>
         <li>
-          <a class="govuk-link govuk-link--no-visited-state" href="#">Renew an existing drone </a>
-        </li>
-        <li>
-          <a class="govuk-lin govuk-link--no-visited-state" href="#">Benefit overpayments</a>
-        </li>
-        <li>
-          <a class="govuk-link govuk-link--no-visited-state" href="#">Benefit fraud</a>
+          <a href="https://design-system.service.gov.uk">
+            GOV.UK Design System
+          </a>
         </li>
       </ul>
     </div>
-
-
-  </div>
-
 </div>
 
 {% endblock %}
