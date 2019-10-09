@@ -23,20 +23,60 @@ Start page example
 
 
 
-<nav style="color: #0075b5; font-weight: 600;">
-  <li style="list-style: none; display: inline-block; padding-right: 24px;">
-    <a href="#" style="line-height: 50px; padding-bottom: 8px; text-decoration: none; border-bottom: 4px solid #0075b5;">Contribute</a>
-  </li>
-  <li style="list-style: none; display: inline-block; padding-right: 24px;">
-    <a href="#" style="line-height: 50px; text-decoration: none; ">Styles</a>
-  </li>
-  <li style="list-style: none; display: inline-block; padding-right: 24px;">
-    <a href="#" style="line-height: 50px; text-decoration: none;">Components</a>
-  </li>
-  <li style="list-style: none; display: inline-block; padding-right: 24px;">
-    <a  href="#" style="line-height: 50px; text-decoration: none;">Patterns</a>
-  </li>
-</nav>
+<head>
+  <meta name="viewport" content="width=100%, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #f8f8f8;
+    }
+
+    .topnav a {
+      box-sizing: border-box;
+      display: block;
+      position: relative;
+      height: 50px;
+      float: left;
+      color: #1d70b8;
+      text-align: center;
+      padding: 0 15px;
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 50px;
+      text-decoration: none;
+    }
+
+    .topnav a:active {
+      background-color: #f8f8f8;
+      color: #1d70b8;
+    }
+
+    .topnav a:hover {
+      text-decoration: underline;
+    }
+
+    .topnav .current {
+      background-color: #f8f8f8;
+      color: #1d70b8;
+      border-bottom: 4px;
+      border-bottom-style: solid;
+      border-bottom-color: #1d70b8;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topnav">
+    <a href="#contribute">Contribute</a>
+    <a href="#styles">Styles</a>
+    <a href="#components">Components</a>
+    <a href="#patterns">Patterns</a>
+  </div>
+</body>
 
 {% endblock %}
 
