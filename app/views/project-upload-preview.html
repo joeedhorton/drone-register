@@ -1,0 +1,190 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Task list
+{% endblock %}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      alpha
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+<nav style="color: #0075b5; font-weight: 600;">
+  <li style="list-style: none; display: inline-block; padding-right: 24px;">
+    <a style="line-height: 50px; padding-bottom: 8px; border-bottom: 4px solid #0075b5;">Contribute</a>
+  </li>
+  <li style="list-style: none; display: inline-block; padding-right: 24px;">
+    <a style="line-height: 50px;">Styles</a>
+  </li>
+  <li style="list-style: none; display: inline-block; padding-right: 24px;">
+    <a style="line-height: 50px;">Components</a>
+  </li>
+  <li style="list-style: none; display: inline-block; padding-right: 24px;">
+    <a style="line-height: 50px;">Patterns</a>
+  </li>
+</nav>
+
+
+
+
+
+{% endblock %}
+
+{% block content %}
+
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <dl class="govuk-summary-list">
+      <h2 class="govuk-heading-m">Your details</h2>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Name
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Louise Vernon
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> name</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Email
+        </dt>
+        <dd class="govuk-summary-list__value">
+          louise@digital.homeoffice.gov.uk
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> date of birth</span>
+          </a>
+        </dd>
+      </div>
+      <h2 class="govuk-heading-m" style="padding-top:40px">Your project</h2>
+      <div class="govuk-summary-list__row">
+
+        <dt class="govuk-summary-list__key">
+          Name
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Design example
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> contact information</span>
+          </a>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Type
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">Alpha</p>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> contact details</span>
+          </a>
+        </dd>
+
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Image
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <img src="/public/images/screenshot.png" style=";max-width:420px; alt="Screenshot of design example.">
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> contact details</span>
+          </a>
+        </dd>
+
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Context
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">This is a longer paragraph of text provided by the user to provide additional information.</p>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> contact details</span>
+          </a>
+        </dd>
+
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Research
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">This is a longer paragraph of text provided by the user to provide additional information.</p>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> contact details</span>
+          </a>
+        </dd>
+
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Additional material
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">https://github.com/alphagov/govuk-design-system-backlog</p>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> contact details</span>
+          </a>
+        </dd>
+
+      </div>
+
+
+
+    </dl>
+
+
+
+
+
+
+    <a href="project-upload.html" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8" data-module="govuk-button">
+      Submit design
+      <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+        <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+      </svg>
+    </a>
+
+
+
+
+  </div>
+</div>
+
+{% endblock %}
